@@ -6,8 +6,8 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 public class RestControllerExample {
 
-	@GetMapping("/hello")
-	public String hello() {
-		return "Welcome";
+	@GetMapping("/hello.{name}")
+	public String hello(@PathVaribale String name) {
+		return "Welcome "+name;
 	}
 }
