@@ -9,6 +9,6 @@ public class RestControllerExample {
 
 	@GetMapping("/hello/{name}")
 	public String hello(@PathVariable String name) {
-		return "Welcome";
+		return "Welcome here"+name;
 	}
 }
